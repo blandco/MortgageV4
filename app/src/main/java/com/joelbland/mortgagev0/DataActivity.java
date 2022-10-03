@@ -57,5 +57,7 @@ public class DataActivity extends AppCompatActivity {
     public void goBack( View v ) {
         updateMortgageObject();
         this.finish();
+        // Could not get the transition to work properly.
+        // overridePendingTransition( R.anim.fade_in_and_scale, 0);
     }
 }
