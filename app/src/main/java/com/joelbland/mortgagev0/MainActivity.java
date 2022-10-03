@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
     public void modifyData( View v ) {
         Intent myIntent = new Intent( this, DataActivity.class );
         this.startActivity( myIntent );
-        // Could not get the transition to work properly.
-        // overridePendingTransition( R.anim.slide_from_left, 0);
+        overridePendingTransition( R.anim.slide_from_left, 0);
     }
 }
